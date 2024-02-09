@@ -1,0 +1,35 @@
+class ListNode {
+	constructor(val){
+  	this.data = val
+    this.next = null
+  }
+}
+
+class LinkedList {
+
+	constructor(head){
+  	this.head = null
+    this.size = 0
+  }
+  
+  enque(val){
+  	const node = new ListNode(val)
+ 		let current = this.head
+    if(this.head ==  null){
+    	this.head = node
+    }else{
+    	let current = this.head
+      while(current.next){
+      	current = current.next
+      }
+      current.next = node
+    }
+    this.size++;
+  }
+  
+}
+
+
+const myList = new LinkedList()
+myList.enque(5)
+myList.enque(7)
