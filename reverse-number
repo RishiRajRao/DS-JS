@@ -1,0 +1,12 @@
+const reverseNum = num => {
+	let carry = 0 , sum = 0 , quot = num
+  
+  while(quot>0){
+    carry = quot%10
+  	quot = Math.floor(quot/10)
+    sum =sum*10 + carry
+  }
+  console.log(sum)
+}
+
+reverseNum(1234)
