@@ -32,3 +32,24 @@ findPairHash = (arr,sum) => {
 }
 // const arr = [2,5,7,8,9,10,1,3,4,6,1,0]
 console.log(findPairHash(arr,6))
+
+
+// const arr = [2,5,7,8,9,10,1,3,4,6,1,0] , sum = 6
+
+
+// const getPairSum = (arr,sum) => {
+// 	const result =[]
+//   const values = new Set()
+//   for(let i=0 ; i<arr.length; i++){
+//   	if(values.has(sum-arr[i])){
+//     	result.push([arr[i],sum-arr[i]])
+//     }else{
+//     	values.add(arr[i])
+//     }
+//   }
+//   return result;
+//   //if unique couple then loop and filter based on sum
+// }
+
+
+// console.log(getPairSum(arr,sum))
