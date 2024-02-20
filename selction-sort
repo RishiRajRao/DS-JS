@@ -1,0 +1,24 @@
+const sample = [ 64, 34, 25, 12, 22, 11, 90 ]
+const bSort = arr => {
+	let j = arr.length -1 , temp = 0 , swap
+  while(j>=0){
+  let max = temp
+  	for(let i = 0 ; i<=j ; i++){
+  	if(max<arr[i]){
+    	max = arr[i]
+      temp = i
+    }
+  }
+  swap = arr[j]
+  arr[j] = max
+  arr[temp] = swap 
+  temp = 0
+  j--;
+  
+  }
+  
+  console.log('sort==' , arr)
+	
+}
+
+bSort(sample)
