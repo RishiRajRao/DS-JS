@@ -1,0 +1,18 @@
+const sample = 'aabrakadbra'
+
+const getLongPreSuf = str => {
+	let initial = 0 , mid  = Math.floor(str.length/2)
+  let j = mid , res = ''
+  
+  while(j<str.length){
+  	if(str[initial] == str[j]){
+    	res += str[j]
+      j++;initial++;
+    }else{
+    	res='', initial = 0;
+      j++;
+    }
+  }
+  
+  return res;
+}
